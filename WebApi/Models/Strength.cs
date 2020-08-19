@@ -10,5 +10,7 @@ namespace WebApi.Models
         public int StrId { get; set; }
         public string StrName { get; set; }
         public int CompanyId { get; set; }
+        public Company Company { get; set; }
+
     }
 }

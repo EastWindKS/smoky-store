@@ -68,22 +68,25 @@ namespace WebApi.Controllers
         [HttpPost]
         public ActionResult<Company> AddCompany(CompanyAddDto addCompany)
         {
-            var company = _mapper.Map<Company>(addCompany);
-            _repoData.AddCompany(company);
-            _repoData.SaveChanges();
-            var companyIdByName = _repoData.GetCompanyByName(company.CompanyName);
 
-            foreach (string str in addCompany.Strengths)
+            var company = new Company
             {
-                var addStrItem = _mapper.Map<Strength>(new StrAddDto
-                {
-                    CompanyId = companyIdByName.CompanyId,
-                    StrName = str
-                });
-                _repoData.AddStr(_mapper.Map<Strength>(addStrItem));
-                _repoData.SaveChanges();
+                CompanyName = addCompany.CompanyName,
+                ImgUrl = addCompany.ImgUrl,
+                Strengths = new List<Strength>()
+            };
+            
+
+            foreach (var str in addCompany.Strengths)
+            {
+                
+                var addStrItem = new Strength { StrName = str };
+                
+                company.Strengths.Add(addStrItem);
 
             };
+            _repoData.AddCompany(company);
+            _repoData.SaveChanges();
             return Ok(company);
         }
 

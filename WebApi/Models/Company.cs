@@ -17,6 +17,7 @@ namespace WebApi.Models
         public string CompanyName { get; set; }
         [MaxLength(250)]
         public string ImgUrl { get; set; }
-       
+
+        public List<Strength> Strengths { get; set; }
     }
 }
