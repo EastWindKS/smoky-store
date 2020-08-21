@@ -66,7 +66,7 @@ namespace WebApi.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Company> AddCompany(CompanyAddDto addCompany)
+        public ActionResult AddCompany(CompanyAddDto addCompany)
         {
 
             var company = new Company
@@ -87,7 +87,7 @@ namespace WebApi.Controllers
             };
             _repoData.AddCompany(company);
             _repoData.SaveChanges();
-            return Ok(company);
+            return NoContent();
         }
 
         [HttpPatch("{id}")]
