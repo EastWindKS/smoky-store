@@ -79,11 +79,10 @@ namespace WebApi.Controllers
 
             foreach (var str in addCompany.Strengths)
             {
-                
                 var addStrItem = new Strength { StrName = str };
                 
                 company.Strengths.Add(addStrItem);
-
+                
             };
             _repoData.AddCompany(company);
             _repoData.SaveChanges();
