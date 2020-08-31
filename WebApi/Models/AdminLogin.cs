@@ -7,9 +7,15 @@ namespace WebApi.Models
     [Table("Logins", Schema = "Admin")]
     public class AdminLogin
     {
-        [Key]
-        public int AdminId { get; set; }
+        [Key] public int AdminId { get; set; }
         public string Login { get; set; }
+
         public string Password { get; set; }
+        //  public Role[] Roles { get; set; }
     }
+
+    //    public enum Role
+    //    {
+    //        User,Admin
+    //    }
 }

@@ -4,6 +4,6 @@ namespace WebApi.Data
 {
     public interface IAdminLogin
     {
-        bool GetAccess(string login, string password);
+        AdminLogin GetAccess(string login, string password);
     }
 }

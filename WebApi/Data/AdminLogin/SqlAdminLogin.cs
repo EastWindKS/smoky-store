@@ -11,12 +11,14 @@ namespace WebApi.Data
         {
             _context = context;
         }
-        public bool GetAccess(string login, string password)
+        public AdminLogin GetAccess(string login, string password)
         {
             
             var exist = _context.AdminLogins.Where(admin => admin.Login == login && admin.Password == password).ToList()
                 .FirstOrDefault();
-            return exist != null;
+            return exist;
         }
+
+       
     }
 }

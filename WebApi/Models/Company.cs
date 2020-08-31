@@ -10,12 +10,11 @@ namespace WebApi.Models
     [Table("Companies", Schema = "Tobacco")]
     public class Company
     {
-        [Key]
+       
         public int CompanyId { get; set; }
-        [Required]
-        [MaxLength(100)]
+        
         public string CompanyName { get; set; }
-        [MaxLength(250)]
+        
         public string ImgUrl { get; set; }
 
         public List<Strength> Strengths { get; set; }
