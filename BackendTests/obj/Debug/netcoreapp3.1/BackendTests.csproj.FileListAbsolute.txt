@@ -139,3 +139,10 @@ E:\code\folio\back\BackendTests\bin\Debug\netcoreapp3.1\WebApi.pdb
 E:\code\folio\back\BackendTests\bin\Debug\netcoreapp3.1\Castle.Core.dll
 E:\code\folio\back\BackendTests\bin\Debug\netcoreapp3.1\Moq.dll
 E:\code\folio\back\BackendTests\obj\Debug\netcoreapp3.1\BackendTests.csproj.CoreCompileInputs.cache
+E:\code\folio\back\BackendTests\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\code\folio\back\BackendTests\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\code\folio\back\BackendTests\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+E:\code\folio\back\BackendTests\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+E:\code\folio\back\BackendTests\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\code\folio\back\BackendTests\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+E:\code\folio\back\BackendTests\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

@@ -1,0 +1,13 @@
+E:\code\folio\back\CheckConsole\bin\Debug\netcoreapp3.1\CheckConsole.exe
+E:\code\folio\back\CheckConsole\bin\Debug\netcoreapp3.1\CheckConsole.deps.json
+E:\code\folio\back\CheckConsole\bin\Debug\netcoreapp3.1\CheckConsole.runtimeconfig.json
+E:\code\folio\back\CheckConsole\bin\Debug\netcoreapp3.1\CheckConsole.runtimeconfig.dev.json
+E:\code\folio\back\CheckConsole\bin\Debug\netcoreapp3.1\CheckConsole.dll
+E:\code\folio\back\CheckConsole\bin\Debug\netcoreapp3.1\CheckConsole.pdb
+E:\code\folio\back\CheckConsole\obj\Debug\netcoreapp3.1\CheckConsole.csprojAssemblyReference.cache
+E:\code\folio\back\CheckConsole\obj\Debug\netcoreapp3.1\CheckConsole.AssemblyInfoInputs.cache
+E:\code\folio\back\CheckConsole\obj\Debug\netcoreapp3.1\CheckConsole.AssemblyInfo.cs
+E:\code\folio\back\CheckConsole\obj\Debug\netcoreapp3.1\CheckConsole.csproj.CoreCompileInputs.cache
+E:\code\folio\back\CheckConsole\obj\Debug\netcoreapp3.1\CheckConsole.dll
+E:\code\folio\back\CheckConsole\obj\Debug\netcoreapp3.1\CheckConsole.pdb
+E:\code\folio\back\CheckConsole\obj\Debug\netcoreapp3.1\CheckConsole.genruntimeconfig.cache

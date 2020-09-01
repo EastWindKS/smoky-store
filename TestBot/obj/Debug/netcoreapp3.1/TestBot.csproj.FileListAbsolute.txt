@@ -1,0 +1,16 @@
+E:\code\folio\back\TestBot\bin\Debug\netcoreapp3.1\TestBot.exe
+E:\code\folio\back\TestBot\obj\Debug\netcoreapp3.1\TestBot.csprojAssemblyReference.cache
+E:\code\folio\back\TestBot\obj\Debug\netcoreapp3.1\TestBot.AssemblyInfoInputs.cache
+E:\code\folio\back\TestBot\obj\Debug\netcoreapp3.1\TestBot.AssemblyInfo.cs
+E:\code\folio\back\TestBot\bin\Debug\netcoreapp3.1\TestBot.deps.json
+E:\code\folio\back\TestBot\bin\Debug\netcoreapp3.1\TestBot.runtimeconfig.json
+E:\code\folio\back\TestBot\bin\Debug\netcoreapp3.1\TestBot.runtimeconfig.dev.json
+E:\code\folio\back\TestBot\bin\Debug\netcoreapp3.1\TestBot.dll
+E:\code\folio\back\TestBot\bin\Debug\netcoreapp3.1\TestBot.pdb
+E:\code\folio\back\TestBot\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\code\folio\back\TestBot\bin\Debug\netcoreapp3.1\Telegram.Bot.dll
+E:\code\folio\back\TestBot\obj\Debug\netcoreapp3.1\TestBot.csproj.CoreCompileInputs.cache
+E:\code\folio\back\TestBot\obj\Debug\netcoreapp3.1\TestBot.csproj.CopyComplete
+E:\code\folio\back\TestBot\obj\Debug\netcoreapp3.1\TestBot.dll
+E:\code\folio\back\TestBot\obj\Debug\netcoreapp3.1\TestBot.pdb
+E:\code\folio\back\TestBot\obj\Debug\netcoreapp3.1\TestBot.genruntimeconfig.cache
