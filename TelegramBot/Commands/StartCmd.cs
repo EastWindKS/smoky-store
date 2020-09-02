@@ -7,16 +7,12 @@ namespace TelegramBot.Commands
     public class StartCmd : Command
     {
         public override string Name => "start";
+
+        private string sendMsg = "You can use commands: \n/store,\n/contacts,\n/about";
         public override async void Execute(Message msg, TelegramBotClient client)
         {
             var chatId = msg.Chat.Id;
-            await client.SendTextMessageAsync(
-                chatId,
-                "Hey, What is up?"
-                //replyMarkup: new InlineKeyboardMarkup(
-                //    InlineKeyboardButton.WithUrl("Repository", "https://123t"))
-                );
-
+            await client.SendTextMessageAsync(chatId, sendMsg);
         }
     }
 }

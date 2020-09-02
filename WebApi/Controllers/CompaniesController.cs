@@ -22,7 +22,6 @@ namespace WebApi.Controllers
             _mapper = mapper;
         }
 
-
         [HttpGet]
         public ActionResult<IEnumerable<Company>> GetAllCompanies()
         {
@@ -75,14 +74,14 @@ namespace WebApi.Controllers
                 ImgUrl = addCompany.ImgUrl,
                 Strengths = new List<Strength>()
             };
-            
+
 
             foreach (var str in addCompany.Strengths)
             {
                 var addStrItem = new Strength { StrName = str };
-                
+
                 company.Strengths.Add(addStrItem);
-                
+
             };
             _repoData.AddCompany(company);
             _repoData.SaveChanges();
