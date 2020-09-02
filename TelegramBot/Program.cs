@@ -15,7 +15,7 @@ namespace TelegramBot
             client.StartReceiving();
             Console.ReadKey();
         }
-        private static async void OnMessage(object sender, MessageEventArgs e)
+        private static void OnMessage(object sender, MessageEventArgs e)
         {
             var chatId = e.Message.Chat.Id;
             var commands = Bot.Commands;
@@ -23,7 +23,7 @@ namespace TelegramBot
             {
                 if (cmd.Contains(e.Message.Text))
                 {
-                    cmd.Execute(e.Message,client);
+                    cmd.Execute(e.Message, client);
                 }
             }
 

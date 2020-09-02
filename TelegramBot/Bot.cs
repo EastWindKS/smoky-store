@@ -8,9 +8,9 @@ namespace TelegramBot
     public static class Bot
     {
         private static TelegramBotClient _client;
-        private const string Token = "1348175102:AAHz5ZCLU0Fs-GMX59ZhxiuNMQgNeIG-704";
-        private static List<Command> commandsList;
-        public static IReadOnlyList<Command> Commands => commandsList.AsReadOnly();
+        private static readonly  string Token = AppSettings.AppSettings.Key;
+        private static List<Command> _commandsList;
+        public static IReadOnlyList<Command> Commands => _commandsList.AsReadOnly();
 
 
         public static TelegramBotClient Get()
@@ -21,7 +21,7 @@ namespace TelegramBot
             }
 
             _client = new TelegramBotClient(Token) { Timeout = TimeSpan.FromSeconds(5) };
-            commandsList = new List<Command> { new HelloCmd() };
+            _commandsList = new List<Command> { new StartCmd() };
 
             return _client;
         }
