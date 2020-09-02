@@ -8,7 +8,7 @@ namespace TelegramBot
     public static class Bot
     {
         private static TelegramBotClient _client;
-        private static readonly  string Token = AppSettings.AppSettings.Key;
+        private static readonly  string Token = AppSettings.Key;
         private static List<Command> _commandsList;
         public static IReadOnlyList<Command> Commands => _commandsList.AsReadOnly();
 
