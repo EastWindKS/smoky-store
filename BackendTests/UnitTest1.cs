@@ -9,7 +9,6 @@ using WebApi.Dtos;
 using WebApi.Models;
 using WebApi.Profiles;
 using Xunit;
-
 namespace BackendTests
 {
     public class CompaniesControllerTest
@@ -56,7 +55,7 @@ namespace BackendTests
                 cfg.AddProfile(new CompanyProfile())).CreateMapper();
             var mockDataRepository = new Mock<ICompanyRepository>();
             mockDataRepository.Setup(repo => repo.GetCompanyById(1))
-                .Returns((() => mockCompany ));
+                .Returns((() => mockCompany));
             var x = mapper.Map<CompanyReadDto>(mockCompany);
             var companiesController = new CompaniesController(mockDataRepository.Object, mapper);
 
@@ -64,7 +63,7 @@ namespace BackendTests
             var result = companiesController.GetCompanyById(1).Result;
             var actionResult = Assert.IsType<OkObjectResult>(result);
             Assert.IsType<CompanyReadDto>(actionResult.Value);
-            
+
         }
     }
 

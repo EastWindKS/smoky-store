@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using AutoMapper;
-using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Data;
 using WebApi.Dtos;
@@ -88,27 +87,27 @@ namespace WebApi.Controllers
             return NoContent();
         }
 
-        [HttpPatch("{id}")]
-        public ActionResult PartialCompanyUpdate(int id, JsonPatchDocument<CompanyUpdateDto> patchDocument)
-        {
-            var companyFromRepo = _repoData.GetCompanyById(id);
-            if (companyFromRepo == null)
-            {
-                return NotFound();
-            }
+        //[HttpPatch("{id}")]
+        //public ActionResult PartialCompanyUpdate(int id, JsonPatchDocument<CompanyUpdateDto> patchDocument)
+        //{
+        //    var companyFromRepo = _repoData.GetCompanyById(id);
+        //    if (companyFromRepo == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            var companyToPatch = _mapper.Map<CompanyUpdateDto>(companyFromRepo);
-            patchDocument.ApplyTo(companyToPatch, ModelState);
-            if (!TryValidateModel(companyToPatch))
-            {
-                return ValidationProblem(ModelState);
-            }
+        //    var companyToPatch = _mapper.Map<CompanyUpdateDto>(companyFromRepo);
+        //    patchDocument.ApplyTo(companyToPatch, ModelState);
+        //    if (!TryValidateModel(companyToPatch))
+        //    {
+        //        return ValidationProblem(ModelState);
+        //    }
 
-            _mapper.Map(companyToPatch, companyFromRepo);
-            _repoData.UpdateCompany(companyFromRepo);
-            _repoData.SaveChanges();
-            return NoContent();
-        }
+        //    _mapper.Map(companyToPatch, companyFromRepo);
+        //    _repoData.UpdateCompany(companyFromRepo);
+        //    _repoData.SaveChanges();
+        //    return NoContent();
+        //}
 
         [HttpDelete("{id}")]
         public ActionResult DeleteCompany(int id)

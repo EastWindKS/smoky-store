@@ -3,6 +3,7 @@ BackendTests/BackendTests.csproj
 BackendTests/obj/
 TelegramBot/TelegramBot.csproj
 TelegramBot/obj/
+TelegramBot/bin/
 TelegramBot/AppSettings.cs
 WebApi/.vs/
 WebApi/Properties/
