@@ -1,0 +1,12 @@
+.vs/
+BackendTests/BackendTests.csproj
+BackendTests/obj/
+TelegramBot/TelegramBot.csproj
+TelegramBot/obj/
+WebApi/.vs/
+WebApi/Properties/
+WebApi/WebStore.csproj
+WebApi/WebStore.sln
+WebApi/appsettings.Development.json
+WebApi/appsettings.json
+WebApi/obj/
