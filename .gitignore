@@ -10,3 +10,4 @@ WebApi/WebStore.sln
 WebApi/appsettings.Development.json
 WebApi/appsettings.json
 WebApi/obj/
+WebApi/bin
