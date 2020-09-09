@@ -1,15 +1,7 @@
 ﻿using System;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.JsonPatch.Operations;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Telegram.Bot;
 using Telegram.Bot.Args;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using WebApi;
-using WebApi.Data;
+
 
 namespace TelegramBot
 {

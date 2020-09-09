@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
 using Telegram.Bot;
 using TelegramBot.CallBacks;
 using TelegramBot.Commands;
-using WebApi.Data;
-using  Microsoft.Extensions.DependencyInjection;
+
 
 namespace TelegramBot
 {
