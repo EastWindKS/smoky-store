@@ -58,5 +58,24 @@ namespace WebApi.Controllers
             }
             return Unauthorized();
         }
+
+        [HttpGet("Orders")]
+        public ActionResult<IEnumerable<StoreOrder>> GetAllActiveOrders()
+        {
+            var result = _repo.OrderList();
+            if (result != null)
+            {
+                return Ok(result);
+            }
+
+            return NotFound();
+        }
+
+        [HttpGet("Orders/{id}")]
+        public ActionResult<StoreOrder> GetOrderById(int id)
+        {
+            var result = _repo.GetOrderById(id);
+            return Ok(result);
+        }
     }
 }

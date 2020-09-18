@@ -14,5 +14,6 @@ namespace WebApi.Data
         public DbSet<Strength> Strengths { get; set; }
         public DbSet<TobaccoProduct> Products { get; set; }
         public DbSet<AdminLogin> AdminLogins { get; set; }
+        public DbSet<StoreOrder> StoreOrders { get; set; }
     }
 }
